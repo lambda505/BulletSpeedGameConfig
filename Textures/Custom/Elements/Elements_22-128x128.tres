@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://di277e6xcsm5i"]
+
+[ext_resource type="Texture2D" uid="uid://bk10j3om8gg3k" path="res://textures/Custom/Elements/Elements_22-128x128.png" id="1_irf8u"]
+
+[resource]
+albedo_texture = ExtResource("1_irf8u")
+emission_enabled = true
+emission = Color(0.858824, 0.909804, 0.690196, 1)
+emission_energy_multiplier = 0.15
+emission_on_uv2 = true
+texture_filter = 2

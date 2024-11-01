@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://h08xjt27yp32"]
+
+[ext_resource type="Texture2D" uid="uid://duhnks78lthlg" path="res://textures/Custom/Triggers/teleport.png" id="1_f17uy"]
+
+[resource]
+transparency = 4
+albedo_texture = ExtResource("1_f17uy")
+texture_filter = 2

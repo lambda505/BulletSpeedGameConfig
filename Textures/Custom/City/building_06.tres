@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b3gohqlkyx4vn"]
+
+[ext_resource type="Texture2D" uid="uid://b6je0gdhv572c" path="res://textures/Custom/City/building_06.png" id="1_v3sf7"]
+
+[resource]
+albedo_texture = ExtResource("1_v3sf7")
+emission_enabled = true
+texture_filter = 2

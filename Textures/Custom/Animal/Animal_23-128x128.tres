@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cto2b1ou4bgh3"]
+
+[ext_resource type="Texture2D" uid="uid://b57mrdvxc7huj" path="res://textures/Custom/Animal/Animal_23-128x128.png" id="1_wkf2c"]
+
+[resource]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.607843)
+normal_enabled = true
+normal_texture = ExtResource("1_wkf2c")
+texture_filter = 2

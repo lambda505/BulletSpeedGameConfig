@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://rhhaguxgcfqp"]
+
+[ext_resource type="Texture2D" uid="uid://ubvlmiay61hc" path="res://textures/Custom/Metal/Metal_08-128x128.png" id="1_jwh24"]
+[ext_resource type="Texture2D" uid="uid://ct4afgk4q5wsw" path="res://textures/Custom/Metal/Metal_08-128x128_normal.png" id="2_b0hgi"]
+
+[resource]
+albedo_texture = ExtResource("1_jwh24")
+metallic = 0.2
+roughness = 0.8
+normal_enabled = true
+normal_texture = ExtResource("2_b0hgi")
+texture_filter = 2
