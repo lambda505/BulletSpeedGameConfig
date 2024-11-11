@@ -76,6 +76,7 @@
 	energy(float) :  : "1.5"
 	light_color(string) :  : "255 255 255"
 	range(integer) :  : 15
+	distance_fade(integer) :  : 40
 ]
 
 @PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = Text_3D : "Display a bill board text" [
