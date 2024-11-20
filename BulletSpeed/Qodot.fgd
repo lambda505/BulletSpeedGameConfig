@@ -64,19 +64,20 @@
 @SolidClass = wall : "Basic entity brush." [
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = Object_Spawner : "Spawn object" [
+@PointClass color(0 128 255) size(-8 -8 -8, 8 8 8) = Object_Spawner : "Spawn object" [
 	objectToSpawn(string) :  : "res://Assets/objects/weapons/Pickable/armor_pickable.tscn"
 	spawnTimer(integer) :  : 60
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = SpawnPoint : "Used as a position for player spawning" [
+@PointClass color(64 244 0) size(-8 -8 -8, 8 8 8) = SpawnPoint : "Used as a position for player spawning" [
+	DefaultTeam(integer) :  : 0
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = OmniLight : "Directionnal light" [
+@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = OmniLight : "Omni light" [
+	distance_fade(integer) :  : 40
 	energy(float) :  : "1.5"
 	light_color(string) :  : "255 255 255"
 	range(integer) :  : 15
-	distance_fade(integer) :  : 40
 ]
 
 @PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = Text_3D : "Display a bill board text" [
@@ -118,4 +119,8 @@
 
 @SolidClass color(204 204 204) = map_jumpup : "Boost player on the given direction" [
 	JumpDirection(string) :  : "0 0 0"
+]
+
+@PointClass color(204 114 255) size(-8 -8 -8, 8 8 8) = Flag_Spawner : "Spawn flag for defined team" [
+	FlagTeamIndex(integer) :  : 0
 ]
