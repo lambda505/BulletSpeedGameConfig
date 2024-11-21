@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dpgrsiijvpo16"]
 
-[ext_resource type="Texture2D" uid="uid://80nwqgoriiab" path="res://textures/Custom/Stone/0_Stone_14-128x128.png" id="1_1a206"]
+[ext_resource type="Texture2D" uid="uid://ciulksjqjxvrk" path="res://textures/Custom/Stone/0_Stone_14-128x128.png" id="1_1a206"]
 [ext_resource type="Texture2D" uid="uid://c1mgwd13lput7" path="res://textures/Custom/Stone/0_Stone_14-128x128_normal.png" id="2_xn8m0"]
 
 [resource]
