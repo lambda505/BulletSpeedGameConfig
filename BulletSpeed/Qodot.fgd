@@ -69,7 +69,7 @@
 	spawnTimer(integer) :  : 60
 ]
 
-@PointClass color(64 244 0) size(-8 -8 -8, 8 8 8) = SpawnPoint : "Used as a position for player spawning" [
+@PointClass color(64 244 0) model("textures/model/k-07.gltf") size(-8 -8 -8, 8 8 40) = SpawnPoint : "Used as a position for player spawning" [
 	DefaultTeam(integer) :  : 0
 ]
 
