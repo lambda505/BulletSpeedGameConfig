@@ -64,12 +64,12 @@
 @SolidClass = wall : "Basic entity brush." [
 ]
 
-@PointClass color(0 128 255) size(-8 -8 -8, 8 8 8) = Object_Spawner : "Spawn object" [
+@PointClass color(193 9 255) model("textures/models/revolver/revolver.gltf") size(-8 -8 -8, 8 8 8) = Object_Spawner : "Spawn object" [
 	objectToSpawn(string) :  : "res://Assets/objects/weapons/Pickable/armor_pickable.tscn"
 	spawnTimer(integer) :  : 60
 ]
 
-@PointClass color(64 244 0) model("textures/model/k-07.gltf") size(-8 -8 -8, 8 8 40) = SpawnPoint : "Used as a position for player spawning" [
+@PointClass color(64 244 0) model("textures/models/k-07/k-07.gltf") size(-8 -8 -8, 8 8 40) = SpawnPoint : "Used as a position for player spawning" [
 	DefaultTeam(integer) :  : 0
 ]
 
@@ -121,6 +121,11 @@
 	JumpDirection(string) :  : "0 0 0"
 ]
 
-@PointClass color(204 114 255) size(-8 -8 -8, 8 8 8) = Flag_Spawner : "Spawn flag for defined team" [
+@PointClass color(204 114 255) size(-32 -32 -8, 32 32 32) model("textures/models/flag/flag.gltf") = Flag_Spawner : "Spawn flag for defined team" [
 	FlagTeamIndex(integer) :  : 0
+]
+
+@PointClass color(255 207 0) size(-8 -8 -8, 8 8 8) = Gamemode : "Define the map base gamemode and startWeapons" [
+	GameMode(string) :  : "FFA"
+	StartWeapons(string) :  : "REVOLVER,SMG"
 ]
