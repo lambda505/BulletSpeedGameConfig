@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://7gbk4x45c5l4"]
+
+[ext_resource type="Texture2D" uid="uid://ctkffyatf2j1" path="res://textures/Custom/Brick/Brick_09-256x256.png" id="1_81ydb"]
+[ext_resource type="Texture2D" uid="uid://b527pfdf3sax2" path="res://textures/Custom/Brick/Brick_09-128x128_normal.png" id="2_4kxyj"]
+
+[resource]
+albedo_texture = ExtResource("1_81ydb")
+normal_enabled = true
+normal_texture = ExtResource("2_4kxyj")
+texture_filter = 2

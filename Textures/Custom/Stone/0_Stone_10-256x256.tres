@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://qgjtos5ob3x8"]
+
+[ext_resource type="Texture2D" uid="uid://cpb0ul8yc1pw4" path="res://textures/Custom/Stone/0_Stone_10-256x256.png" id="1_73f5p"]
+[ext_resource type="Texture2D" uid="uid://dms2qsxxtfgjn" path="res://textures/Custom/Stone/0_Stone_10-128x128_normal.png" id="2_yrx1p"]
+
+[resource]
+albedo_texture = ExtResource("1_73f5p")
+normal_enabled = true
+normal_texture = ExtResource("2_yrx1p")
+texture_filter = 2

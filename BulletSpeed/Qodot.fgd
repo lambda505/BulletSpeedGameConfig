@@ -80,6 +80,15 @@
 	range(integer) :  : 15
 ]
 
+@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = SpotiLight : "Spot light" [
+	direction(string) :  : "0 -1 0"
+	distance_fade(integer) :  : 40
+	energy(float) :  : "1.5"
+	light_color(string) :  : "255 255 255"
+	spot_angle(float) :  : "45"
+	spot_range(integer) :  : 15
+]
+
 @PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = Text_3D : "Display a bill board text" [
 	color(string) :  : "255 255 255"
 	pixel_size(integer) :  : 36
@@ -121,7 +130,7 @@
 	JumpDirection(string) :  : "0 0 0"
 ]
 
-@PointClass color(204 114 255) size(-32 -32 -8, 32 32 32) model("textures/models/flag/flag.gltf") = Flag_Spawner : "Spawn flag for defined team" [
+@PointClass color(204 114 255) model("textures/models/flag/flag.gltf") size(-32 -32 -8, 32 32 32) = Flag_Spawner : "Spawn flag for defined team" [
 	FlagTeamIndex(integer) :  : 0
 ]
 
