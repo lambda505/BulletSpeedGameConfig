@@ -5,3 +5,5 @@ This repository provides the game configuration and textures for setting up **Bu
 - Includes the required textures for level design.
 
 Simply clone the repo and follow the setup instructions in [this Steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=3358286673) for Trenchbroom integration!
+
+s/o Erik Engström (wrad textures), screamingbrainstudios (textures), The Gas Station (Urban Decay Textures), foxh3ad (Fortex textures)
