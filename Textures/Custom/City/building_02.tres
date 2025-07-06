@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bg5it76gwvaew"]
+
+[ext_resource type="Texture2D" uid="uid://c2gyedb42sskm" path="res://textures/Custom/City/building_02.png" id="1_1x6rv"]
+
+[resource]
+albedo_texture = ExtResource("1_1x6rv")
+emission_enabled = true
+emission_energy_multiplier = 0.15
+emission_texture = ExtResource("1_1x6rv")

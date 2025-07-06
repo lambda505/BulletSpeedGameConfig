@@ -8,53 +8,53 @@
 ]
 
 @SolidClass = physics : "Physics Brush" [
-	mass(float) :  : "1"
-	velocity(string) :  : "0 0 0"
+	mass(float) :  : "1.0"
+	velocity(string) :  : "0.0 0.0 0.0"
 ]
 
-@PointClass size(-8 -8 -8, 8 8 8) = physics_ball : "Physics Ball" [
-	mass(float) :  : "1"
-	size(float) :  : "1"
-	velocity(string) : "Initial velocity" : "0 0 0"
+@PointClass size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = physics_ball : "Physics Ball" [
+	mass(float) :  : "1.0"
+	size(float) :  : "1.0"
+	velocity(string) : "Initial velocity" : "0.0 0.0 0.0"
 ]
 
-@PointClass size(-8 -8 -8, 8 8 8) base(Targetname, Target) = signal : "Name of signal to call target." [
+@PointClass size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) base(Targetname, Target) = signal : "Name of signal to call target." [
 	signal_name(string) : "Name of signal to call on target." : ""
 ]
 
-@PointClass size(-8 -8 -8, 8 8 8) base(Targetname, Target) = receiver : "Calls methods on target." [
+@PointClass size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) base(Targetname, Target) = receiver : "Calls methods on target." [
 	receiver_name(string) :  : ""
 ]
 
-@PointClass size(-8 -8 -8, 8 8 8) base(Light) = light : "Invisible light source" [
-	angle(float) : "Rotation Angle" : "0"
+@PointClass size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) base(Light) = light : "Invisible light source" [
+	angle(float) : "Rotation Angle" : "0.0"
 ]
 
 @SolidClass = button : "Interactive button brush." [
-	axis(string) : "Direction of movement when pressed." : "0 -1 0"
+	axis(string) : "Direction of movement when pressed." : "0.0 -1.0 0.0"
 	depth(float) : "How far to move along the axis when pressed." : "0.8"
-	press_signal_delay(float) : "Seconds after press() is called, before emitting is own pressed signal." : "0"
-	release_delay(float) : "Seconds after a physics body exits, before calling release()" : "0"
-	release_signal_delay(float) : "Seconds after release() is called, before emitting is own released signal." : "0"
-	speed(float) : "Delta multiplier for a lerp weight to move the button to its desired position." : "8"
+	press_signal_delay(float) : "Seconds after press() is called, before emitting is own pressed signal." : "0.0"
+	release_delay(float) : "Seconds after a physics body exits, before calling release()" : "0.0"
+	release_signal_delay(float) : "Seconds after release() is called, before emitting is own released signal." : "0.0"
+	speed(float) : "Delta multiplier for a lerp weight to move the button to its desired position." : "8.0"
 	target(string) :  : ""
-	trigger_signal_delay(float) : "Seconds after press() is called, before emitting the trigger signal." : "0"
+	trigger_signal_delay(float) : "Seconds after press() is called, before emitting the trigger signal." : "0.0"
 ]
 
 @SolidClass = detail : "Detail Brush" [
 ]
 
 @SolidClass = mover : "Moving brush." [
-	rotation(string) :  : "0 0 0"
-	scale(string) :  : "1 1 1"
-	speed(float) :  : "1"
-	translation(string) :  : "0 0 0"
+	rotation(string) :  : "0.0 0.0 0.0"
+	scale(string) :  : "1.0 1.0 1.0"
+	speed(float) :  : "1.0"
 	targetname(string) :  : ""
+	translation(string) :  : "0.0 0.0 0.0"
 ]
 
 @SolidClass = rotate : "Rotating Brush" [
-	axis(string) : "Rotation Axis" : "0 1 0"
-	speed(float) : "Rotation Speed" : "360"
+	axis(string) : "Rotation Axis" : "0.0 1.0 0.0"
+	speed(float) : "Rotation Speed" : "360.0"
 ]
 
 @SolidClass = trigger : "Trigger Volume" [
@@ -64,38 +64,38 @@
 @SolidClass = wall : "Basic entity brush." [
 ]
 
-@PointClass color(193 9 255) model("textures/models/revolver/revolver.gltf") size(-8 -8 -8, 8 8 8) = Object_Spawner : "Spawn object" [
+@PointClass color(193 9 255) model("textures/models/revolver/revolver.gltf") size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = Object_Spawner : "Spawn object" [
 	objectToSpawn(string) :  : "res://Assets/objects/weapons/Pickable/armor_pickable.tscn"
 	spawnTimer(integer) :  : 60
 ]
 
-@PointClass color(64 244 0) model("textures/models/k-07/k-07.gltf") size(-8 -8 -8, 8 8 40) = SpawnPoint : "Used as a position for player spawning" [
+@PointClass color(64 244 0) model("textures/models/k-07/k-07.gltf") size(-8.0 -8.0 -8.0, 8.0 8.0 40.0) = SpawnPoint : "Used as a position for player spawning" [
 	DefaultTeam(integer) :  : 0
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = OmniLight : "Omni light" [
+@PointClass color(204 204 204) size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = OmniLight : "Omni light" [
 	distance_fade(integer) :  : 40
 	energy(float) :  : "1.5"
 	light_color(string) :  : "255 255 255"
 	range(integer) :  : 15
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = SpotiLight : "Spot light" [
-	direction(string) :  : "0 -1 0"
+@PointClass color(204 204 204) size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = SpotiLight : "Spot light" [
+	direction(string) :  : "0.0 -1.0 0.0"
 	distance_fade(integer) :  : 40
 	energy(float) :  : "1.5"
 	light_color(string) :  : "255 255 255"
-	spot_angle(float) :  : "45"
+	spot_angle(float) :  : "45.0"
 	spot_range(integer) :  : 15
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = Text_3D : "Display a bill board text" [
+@PointClass color(204 204 204) size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = Text_3D : "Display a bill board text" [
 	color(string) :  : "255 255 255"
 	pixel_size(integer) :  : 36
 	text(string) :  : ""
 ]
 
-@PointClass color(204 204 204) size(-8 -8 -8, 8 8 8) = npc_spawner : "Npc spawner" [
+@PointClass color(204 204 204) size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = npc_spawner : "Npc spawner" [
 	npc_resource_path(string) :  : "res://Assets/objects/missions/NPC/NPC_Allie.tres"
 	npc_scene_path(string) :  : "res://Assets/objects/missions/NPC/NPC.tscn"
 ]
@@ -108,7 +108,7 @@
 
 @SolidClass color(204 204 204) = map_teleport : "TP between two portals" [
 	OutPortalName(string) :  : "Portal 0-1"
-	PortalDir(string) :  : "0 0 0"
+	PortalDir(string) :  : "0.0 0.0 0.0"
 	PortalName(string) :  : "Portal 0-0"
 ]
 
@@ -127,14 +127,34 @@
 ]
 
 @SolidClass color(204 204 204) = map_jumpup : "Boost player on the given direction" [
-	JumpDirection(string) :  : "0 0 0"
+	JumpDirection(string) :  : "0.0 0.0 0.0"
 ]
 
-@PointClass color(204 114 255) model("textures/models/flag/flag.gltf") size(-32 -32 -8, 32 32 32) = Flag_Spawner : "Spawn flag for defined team" [
+@PointClass color(204 114 255) model("textures/models/flag/flag.gltf") size(-32.0 -32.0 -8.0, 32.0 32.0 32.0) = Flag_Spawner : "Spawn flag for defined team" [
 	FlagTeamIndex(integer) :  : 0
 ]
 
-@PointClass color(255 207 0) size(-8 -8 -8, 8 8 8) = Gamemode : "Define the map base gamemode and startWeapons" [
+@PointClass color(255 207 0) size(-8.0 -8.0 -8.0, 8.0 8.0 8.0) = Gamemode : "Define the map base gamemode and startWeapons" [
 	GameMode(string) :  : "FFA"
 	StartWeapons(string) :  : "REVOLVER,SMG"
+]
+
+@SolidClass color(204 204 204) = spawn_object_trigger : "Spawn an object when the trigger is activated" [
+	Delay(float) :  : "0.0"
+	ObjectToSpawn(string) :  : ""
+	OneTime(string) :  : "true"
+	PositionToSpawn(string) :  : "0.0 0.0 0.0"
+	TriggerMode(string) :  : "true"
+]
+
+@SolidClass color(204 204 204) = dialogue_trigger : "Create a dialogue containing the defined dialogue ressource content" [
+	Delay(float) :  : "0.0"
+	DialoguePath(string) :  : "res://dialogues/ressources/tutorial_dialogue.dialogue"
+	DialogueStart(string) :  : "start"
+	OneTime(string) :  : "true"
+]
+
+@SolidClass color(204 204 204) = tutorial_trigger : "Create a tutorial box containing the defined tutorial ressource content" [
+	OneTime(string) :  : "true"
+	TutorialPath(string) :  : "res://dialogues/tutorials/tutorial_bhop.tres"
 ]
