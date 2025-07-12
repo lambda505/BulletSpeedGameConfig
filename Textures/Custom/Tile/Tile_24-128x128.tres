@@ -1,7 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b7t36fjwb3kbo"]
-
-[ext_resource type="Texture2D" uid="uid://dpdkjt5gwncek" path="res://textures/Custom/Tile/Tile_24-128x128.png" id="1_oodcn"]
-
-[resource]
-albedo_texture = ExtResource("1_oodcn")
-texture_filter = 2

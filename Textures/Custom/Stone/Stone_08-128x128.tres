@@ -1,7 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bcx88u454vuib"]
-
-[ext_resource type="Texture2D" uid="uid://cna7bgwuyybto" path="res://textures/Custom/Stone/Stone_08-128x128.png" id="1_1tpgu"]
-
-[resource]
-albedo_texture = ExtResource("1_1tpgu")
-texture_filter = 2

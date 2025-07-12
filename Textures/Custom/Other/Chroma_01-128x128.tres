@@ -1,7 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bm8btpih3thpc"]
-
-[ext_resource type="Texture2D" uid="uid://dh2ip6e6ta3hd" path="res://textures/Custom/Other/Chroma_01-128x128.png" id="1_pnpjb"]
-
-[resource]
-albedo_texture = ExtResource("1_pnpjb")
-texture_filter = 2

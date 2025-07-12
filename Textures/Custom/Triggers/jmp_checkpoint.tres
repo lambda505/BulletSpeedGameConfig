@@ -1,8 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dfljqhp5d4ocs"]
-
-[ext_resource type="Texture2D" uid="uid://6qgtdcy418fp" path="res://textures/Custom/Triggers/jmp_checkpoint.png" id="1_tcpyx"]
-
-[resource]
-transparency = 4
-albedo_texture = ExtResource("1_tcpyx")
-texture_filter = 2

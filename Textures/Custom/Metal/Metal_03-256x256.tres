@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6xwnglg1jyub"]
-
-[ext_resource type="Texture2D" uid="uid://fmk8ostu8h11" path="res://textures/Custom/Metal/Metal_03-256x256.png" id="1_21keb"]
-
-[resource]
-albedo_texture = ExtResource("1_21keb")
-metallic = 0.2
-roughness = 0.8
-texture_filter = 2
